@@ -1,4 +1,4 @@
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ridigbio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ridigbio/ridigbio_{{ version }}.tar.gz
-  sha256: c019dd266aa1334c41430db95361a7b1b911a6793d692b35cd2dc1894232f560
+  sha256: af2a90a8a90fbede4cf2178b758f00cc13066f4d0bd87dac8d156809050a6d59
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
