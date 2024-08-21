@@ -1,4 +1,4 @@
-{% set version = "0.3.8" %}
+{% set version = "0.3.9" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ridigbio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ridigbio/ridigbio_{{ version }}.tar.gz
-  sha256: e518dbaeaf7f0dd0b833d83a6a094e07c5bd84935279c9e35bb69fe35ee00288
+  sha256: 3aca4e871a8ece14a8d1eff5ddc2438eadb2e1c5a39e9f5e11dc4de62ee690e9
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
