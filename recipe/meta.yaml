@@ -23,14 +23,22 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-cowplot
     - r-httr
     - r-jsonlite
+    - r-kableextra
+    - r-leaflet
     - r-plyr
+    - r-tidyverse
   run:
     - r-base
+    - r-cowplot
     - r-httr
     - r-jsonlite
+    - r-kableextra
+    - r-leaflet
     - r-plyr
+    - r-tidyverse
 
 test:
   commands:
